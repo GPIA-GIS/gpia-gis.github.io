@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  {% include head.html %}
+  <link rel="stylesheet" href="{{ "css/navbar.css" | prepend: site.baseurl }}">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="{{ site.baseurl }}">GPIA GIS</a>
+    </div>
+  </nav>
+
+  <div id="main" class="container">
+
+    <div class="header">
+      <h1>GPIA GIS</h1>
+      <p class="lead">
+        This is an index of all <a href="http://www.newschool.edu/public-engagement/ma-ms-international-affairs/" target="_blank">GPIA GIS</a> term pages.
+      </p>
+      <hr>
+    </div>
+
+    <div class="grid-wrapper">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+  </div>
+</body>
+</html>
